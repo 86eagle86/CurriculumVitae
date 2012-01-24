@@ -1,0 +1,118 @@
+\documentclass[pdftex,a4paper,12pt,twoside,titlepage,italian,openright]{report}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[latin1]{inputenc}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{array}
+%\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+%\renewcommand{\subsectionmark}[1]{\markright{\thesection\ #1}}
+%~ \fancyhf{} %clears all header and footer fields
+%~ \fancyhead[LE,RO]{\bfseries\thepage}
+%~ \fancyhead[LO]{\bfseries\rightmark}
+%~ \fancyhead[RE]{\bfseries\leftmark}
+
+% redefine plain style for pagestyle
+\fancypagestyle{plain}{%
+   \fancyhf{} % get rid of headers
+   \renewcommand{\headrulewidth}{0pt} % and the line
+   \fancyfoot[CF]{\bfseries\thepage}
+}
+% redefine headings style for pagestyle
+\fancypagestyle{headings}{%
+   \fancyhf{}
+   \fancyhead[LE,RO]{\bfseries\thepage}
+   \fancyhead[LO]{\bfseries\rightmark}
+   \fancyhead[RE]{\bfseries\leftmark}
+   \renewcommand{\headrulewidth}{1pt} % and the line     
+}
+
+
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage[pdftex,bookmarksnumbered,colorlinks]{hyperref}
+%~ \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{lettrine}
+\usepackage{ifthen}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
+\renewcommand*\familydefault{\sfdefault}
+\renewcommand*\labelitemi{$\textcolor{black!30}{\bullet}$}
+
+\hypersetup{citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{automata}
+\usetikzlibrary{arrows}
+
+
+\definecolor{theme-color}{RGB}{0,0,0}
+\definecolor{listings-comment-color}{RGB}{255,255,255}
+\definecolor{listings-bg-color}{RGB}{225,225,225}
+
+%page numbering conf
+\newcommand{\prefacePageNumbering}{
+  \pagestyle{plain}
+  \pagenumbering{Roman} \setcounter{page}{1}
+}
+
+\newcommand{\bodyPageNumbering}{
+  \cleardoublepage
+  \renewcommand{\thepage}{\arabic{page}} \setcounter{page}{1}
+  \pagestyle{headings}
+}
+
+%titlepage conf
+\newcommand{\FigVertScaled}[5]{\FigRotatedScaled{#1}{#2}{#3}{#4}{#5}}
+\newcommand{\GMAuthor}{}                    % all
+\newcommand{\GMTitle}{}                     % all
+\newcommand{\GMSubtitle}{}                  % [work], thesis
+\newcommand{\GMDate}{\today}                % elaborato, thesis 
+\newcommand{\GMAdvisor}{}                   % tesi, phdthesis
+\newcommand{\GMCoAdvisor}{}                 % [tesi]
+\newcommand{\GMCourse}{}                    % tesi
+\newcommand{\GMphdCourse}{}                 % phdthesis
+\newcommand{\GMDirector}{}                  % phdthesis
+%
+% ---user commands: they change the value of a corresponding macro-key 
+%
+\newcommand{\Author}[1]{\renewcommand{\GMAuthor}{#1}}
+\newcommand{\Title}[1]{\renewcommand{\GMTitle}{#1}}
+\newcommand{\Subtitle}[1]{\renewcommand{\GMSubtitle}{#1}}
+\newcommand{\Date}[1]{\renewcommand{\GMDate}{#1}}
+\newcommand{\Advisor}[1]{\renewcommand{\GMAdvisor}{#1}}
+\newcommand{\CoAdvisor}[1]{\renewcommand{\GMCoAdvisor}{#1}}
+\newcommand{\Course}[1]{\renewcommand{\GMCourse}{#1}}
+\newcommand{\PhDCourse}[1]{\renewcommand{\GMphdCourse}{#1}} %CicloDottorato
+\newcommand{\Director}[1]{\renewcommand{\GMDirector}{#1}}
+
+\lstset{ 
+  language=C++, 
+  basicstyle=\ttfamily \footnotesize, 
+  numbers=left,
+  commentstyle=\color{listings-comment-color} \sffamily,
+  captionpos=b,
+  tabsize=2,
+  backgroundcolor=\color{listings-bg-color},
+  %~ frameround=tttt
+}
+\input{configuration/my_commands}
