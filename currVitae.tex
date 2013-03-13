@@ -1,10 +1,11 @@
-\documentclass[pdftex,a4paper,12pt,twoside,titlepage,italian,openright]{article}
+\documentclass[pdftex,a4paper,10pt,twoside,titlepage,italian,openright]{article}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr,graphicx}
 \usepackage[hmargin=2cm,vmargin=2cm,a4paper]{geometry}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{multirow}
 \pagestyle{fancy}
 \lhead{\scshape Curriculum Vitae}
 \rhead{\itshape Mauro Donadeo}
@@ -19,7 +20,6 @@
 %\definecolor{listings-comment-color}{RGB}{20,0,0}
 
 \begin{document}
-\vspace*{.2cm}
 \begin{center}
 \rule{.8 \textwidth}{1pt}\\[5pt]
 \begin{minipage}{.55\textwidth}
@@ -27,9 +27,10 @@
 	\footnotesize Via Isonzo 136/7 \\ 
 	35143 - Padova (PD)\\
 	email: \texttt{mauro.donadeo@gmail.com}\\
-	\footnotesize n. Tel: +393467846243\\
+	\footnotesize n. Tel: +39 346 784 6243\\
 	\footnotesize Nazionalità: Italiana\\
 	\footnotesize Stato civile: Celibe\\
+	\footnotesize Skype: mauro.donadeo
 \end{minipage}
 \begin{minipage}{.25\textwidth}
 	\includegraphics[width=\textwidth]{io.jpg}
@@ -37,10 +38,8 @@
 \rule{.8 \textwidth}{1pt}
 \end{center}
 \section*{Posizione attuale:}
-	Contratto Co.Co.Co. per  lo sviluppo di un sistema di riconoscimento di gesture, acquisendo le immagini attraverso le camere
-	del Microsoft Kinect; presso l'Univesità degli Studi di Padova al Dipartimento di Psicologia Generale. Il sistema è stato 
-	sviluppato in C++ utilizzando le librerie OpenGL e OpenNi, le animazioni sono state riprodotte in Unity3D. Questo sistema è 
-	stato sviluppato all'interno del progetto europeo CEEDs. 
+	Assegno Grant presso l'Università degli Studi di Padova - Dipartimento di Ingegneria Informatica e Elettronica.
+	Obbiettivo creazione di un sistema di Hand detection e hand gesture recognition.
 \section*{Istruzione}
 \begin{itemize}
 	\item Laurea Magistrale in Ingegneria Informatica (Università degli Studi di Padova, Ottobre 2011).
@@ -53,41 +52,50 @@
 \section*{Esperienze all'estero}
 \begin{itemize}
 	\item 4th CEEDs meeting Londra (Febbraio 2012).
-	\item Erasmus presso FIB - Facultat d’Inform`tica de Barcelona (a.a. 2009/2010)
+	\item Erasmus presso FIB - Facultat d’Informàtica de Barcelona (a.a. 2009/2010)
 \end{itemize}
 \section*{Esperienze Professionali}
 \begin{itemize}
-	\item Docente Corso C.A.R (Corso Avananzato per la Ricerca) dal titolo ``Basi di Java''.
-	Presso l'Univesità degli Studi di Padova - Dipartimento di Psicologia Generale
+	\item Contratto Co.Co.Co presso  presso l'Università degli Studi di Padova al Dipartimento di Psicologia Generale. 
+		 \begin{itemize}
+	 	\item Da Gennaio 2011 a Giugno 2012;
+	 	\item  Sviluppo di un sistema di riconoscimento di gesture, acquisendo le immagini attraverso le camere del Microsoft Kinect. 
+	 	Il sistema è stato 	sviluppato in C++ utilizzando le librerie OpenCV e OpenNI,  le animazioni sono state riprodotte in Unity3D. 
+	 	Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs.
+	 \end{itemize}
+\end{itemize}
+\begin{itemize}
+	\item Docente Corso C.A.R (Corso Avanzato per la Ricerca) dal titolo ``Basi di Java''.
+	Presso l'Università degli Studi di Padova - Dipartimento di Psicologia Generale
 	\begin{itemize}
-		\item Periodo Marzo-Aprile 2012;
+		\item Aprile 2012;
 		\item durata del corso 25 ore.
 	\end{itemize}
 	\item Web Designer presso Simnumerica S.r.l.
 	\begin{itemize}
 		\item dal Novembre 2011 al Dicembre 2011
-		\item Creazione della pagina web dell'azienda. Principale occupazione: creazione del modulo di 
+		\item Sviluppo della pagina web dell'azienda. Moduli principalmente sviluppati: modulo di 
 		iscrizione, news slider, e sistema di trouble ticketing.
 	\end{itemize}
 	\item Assistente informatico presso l'ufficio certificazione offerta didattica - SID.
 	Presso: Università degli Studi di Padova
 	\begin{itemize}
-		\item Dal 01-09-2008 al 31-09-2009 
+		\item Dal Settembre 2008 ad Agosto 2009 
 		\item Bonifica dati della base dati dell'Università, area didattica, prendendo come 
 		modello i dati provenienti dal ministero.
 		\item Creazione di una piccola applicazione web per il controllo delle attività didattiche
 		per la generazione del \textit{diploma supplement}.
 	\end{itemize}
-	\item Assistente informatico presso l'Ufficio Tecnico e Coordinamento Reti. Presso:
+	\item Assistente informatico presso l'Ufficio Tecnico e Coordinamento Reti. Per
 	Regione del Veneto
 	\begin{itemize}
-		\item Dal Dicembre 2007 al Agosto 2008
+		\item Dal Dicembre 2007 ad Agosto 2008
 		\item Progettazione e creazione del portale {\texttt overnetwork.it} basato sul {\textit cms Joomla}
 		ed in particolare: creazione di un sistema di \textit{trouble ticketing} con conseguente 
 		invio di notifiche tramite mail. Creazione di un nuovo sistema di \textit{profiling}
 		degli utenti differente da quello previsto dalla piattaforma Joomla
 	\end{itemize}
-	%\item Portalettere per vari periodi presso i comuni di Cittadella (PD) e Campodarsego (PD).
+	\item Portalettere per vari periodi presso i comuni di Cittadella (PD) e Campodarsego (PD).
 \end{itemize}
 \section*{Conoscenze informatiche:}
 \begin{itemize}
@@ -95,28 +103,41 @@
 	sistemi operativi Microsoft.
 	\item \textbf{Programmazione: }:
 	\begin{itemize}
-	\item C/C++/C\#(anche con Microsoft Visual Studio 2010)
+	\item C/C++/C\#;
 	\item Java
 	\item Php MySql.
 	\end{itemize}
 	\item \textbf{Altro: }
 	\begin{itemize}
-	\item librerie per la {\itshape computer vision}: Directx10, OpenNI, OpenGL, OpenCV;
+	\item librerie per la {\itshape computer vision}: Directx10, OpenNI, OpenGL, OpenCV, Qt4;
 	\item sviluppo software su sistemi di acquisizione stereo e MS Kinect;
+	\item ambienti di sviluppo: NetBeans, Visual Studio 2010, QtCreator;
 	\item Unity 3D Game Engine
 	\item vim, Matlab, pacchetto Office, NXC, \LaTeX
 	\end{itemize}
 \end{itemize}
 \section*{Conoscenze linguistiche:}
 \begin{itemize}
-	\item \textbf{Italiano:} madrelingua;
-	\item \textbf{Inglese:} scolastico in writing e listening, buono nel reading.
-	\item \textbf{Spagnolo:} ottima conoscenza sia scritta che parlata.
+	\item Madrelingua: \textbf{Italiano};
+	\item altre lingue:
 \end{itemize}
+\begin{center}
+	\begin{tabular}{|l|c|c|}
+	\hline
+	&\textbf{Inglese} & \textbf{Spagnolo}\\
+	\hline
+	Capacità di lettura & Buona & Eccellente\\
+	\hline
+	Capacità di scrittura & Discreta & Buona \\
+	\hline
+	Capacità di espressione orale & Buona & Eccellente \\
+	\hline
+	\end{tabular}
+\end{center}
 \section*{Interessi personali: }
 \begin{itemize}
-	\item Informatica in generale, editing video e immagini
-	\item Sport: pratico nuoto e bicicletta, saltuariamente gioco a calcetto;
+	\item Informatica in generale, editing video e immagini;
+	\item Sport: pratico nuoto e bicicletta da quest'anno sono iscritto ad una squadra di triathlon;
 	\item Libri possibilmente in spagnolo per mantenere la conoscenza della lingua.
 \end{itemize}
 \vfill
