@@ -1,4 +1,4 @@
-\documentclass[pdftex,a4paper,10pt,twoside,titlepage,italian,openright]{article}
+\documentclass[pdftex,a4paper,10pt,twoside,titlepage,italian]{article}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr,graphicx}
@@ -15,7 +15,7 @@
 \renewcommand{\headrulewidth}{.5pt}
 \renewcommand{\footrulewidth}{.5pt}
 %\renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
-\renewcommand*\familydefault{\sfdefault}
+%\renewcommand*\familydefault{\sfdefault}
 \renewcommand*\labelitemi{$\textcolor{black!30}{\bullet}$}
 %\definecolor{listings-comment-color}{RGB}{20,0,0}
 
@@ -23,23 +23,66 @@
 \begin{center}
 \rule{.8 \textwidth}{1pt}\\[5pt]
 \begin{minipage}{.55\textwidth}
-	\LARGE\textbf{Mauro Donadeo}\\[20pt]
+	\LARGE\textbf{Mauro Donadeo}\\[16pt]
 	\footnotesize Via Isonzo 136/7 \\ 
 	35143 - Padova (PD)\\
 	email: \texttt{mauro.donadeo@gmail.com}\\
-	\footnotesize n. Tel: +39 346 784 6243\\
-	\footnotesize Nazionalità: Italiana\\
-	\footnotesize Stato civile: Celibe\\
-	\footnotesize Skype: mauro.donadeo
+	\footnotesize{data di nascita: 18 Gennaio 1986}\\
+	\footnotesize {n. Tel: +39 346 784 6243}\\
+	\footnotesize {Nazionalità: Italiana}\\
+	\footnotesize {Stato civile: Celibe}\\
+	\footnotesize {Skype: mauro.donadeo}
 \end{minipage}
 \begin{minipage}{.25\textwidth}
 	\includegraphics[width=\textwidth]{io.jpg}
-\end{minipage}\\[5pt]
-\rule{.8 \textwidth}{1pt}
+\end{minipage}
+\rule{.8 \textwidth}{1pt}\\[5pt]
 \end{center}
-\section*{Posizione attuale:}
-	Assegno Grant presso l'Università degli Studi di Padova - Dipartimento di Ingegneria Informatica e Elettronica.
-	Obbiettivo creazione di un sistema di Hand detection e hand gesture recognition.
+\section*{Esperienze Professionali}
+\begin{tabular}[h]{l p{0.8\textwidth}}
+\footnotesize{data (da - a)} & Luglio 2012 - attuale \\
+\footnotesize{posizione} & Assegno Grant presso l'Università degli Studi di Padova - DEI.\\
+\footnotesize{attività principali}& Creazione di un sistema di hand detection e hand gesture recognition.
+Mediante acquisizione delle immagini con sistemi low cost (Microsoft Kinect). Sistema sviluppato interamente in 
+\textit{C++} utilizzando le librerie \textit{OpenCV, OpenNI, VTK, PCL e Qt}.\\
+ & \\
+\footnotesize{data (da-a)} & Gennaio 2011 - Giugno 2012 \\
+\footnotesize{posizione}& Contratto Co.Co.Co presso  l'Università degli Studi di Padova - DPG.\\
+\footnotesize{attività principali} & Sviluppo di un sistema di riconoscimento gesture con immagini 
+acquisite tramite MS Kinect. Sistema sviluppato 
+ 			in \textit{C++} utilizzando le librerie \textit{OpenCV e OpenNI}, animazioni riprodotte in \textit{Unity3D}. 
+Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http://ceeds-project.eu/).\\
+& \\
+\footnotesize{data (da - a)} & Marzo 2012 - Aprile 2012\\
+\footnotesize{posizione} & Docente Corso C.A.R (Corso Avanzato per la Ricerca)\\
+\footnotesize{attività principali} & Corso di 25 ore in cui sono stati spiegati i fondamenti del Java\\
+& \\
+\footnotesize{data (da - a)} & Novembre 2011 - Giugno 2011 \\
+\footnotesize{posizione} & Web Designer presso Simnumerica S.r.l.\\
+\footnotesize{attività principali}& Sviluppo della pagina web dell'azienda. Moduli principalmente sviluppati: modulo di 
+		iscrizione, news slider, e sistema di trouble ticketing.\\
+		& \\
+\footnotesize{data (da - a)} & Settembre 2008 ad Agosto 2009 \\
+\footnotesize{posizione} & Assistente informatico presso Università degli Studi di Padova: 
+					Ufficio Certificazione Offerta Didattica - SID.\\
+\footnotesize{attività principali} & Bonifica dati della base dati dell'Università, area didattica, prendendo come 
+		modello i dati provenienti dal ministero.\\
+		& Creazione di una piccola applicazione web per il controllo delle attività didattiche
+		per la generazione del \textit{diploma supplement}.\\
+& \\
+\footnotesize{data (da - a)} & Dicembre 2007 - Agosto 2008 \\
+\footnotesize{posizione} & Assistente informatico presso Regione del Veneto: Ufficio Tecnico e Coordinamento Reti.\\
+\footnotesize{attività principali} & Progettazione e creazione del portale {\texttt overnetwork.it} basato sul {\textit cms Joomla}
+		ed in particolare: creazione di un sistema di \textit{trouble ticketing} con conseguente 
+		invio di notifiche tramite mail. Creazione di un nuovo sistema di \textit{profiling}
+		degli utenti differente da quello previsto dalla piattaforma Joomla\\
+& \\
+\footnotesize{data (da - a)} & Settembre 2005 - Ottobre 2007 \\
+\footnotesize{attività principali} & Portalettere per vari periodi presso i comuni di Cittadella (PD) e Campodarsego (PD).\\
+& \\
+%& \\
+\end{tabular}
+
 \section*{Istruzione}
 \begin{itemize}
 	\item Laurea Magistrale in Ingegneria Informatica (Università degli Studi di Padova, Ottobre 2011).
@@ -54,56 +97,14 @@
 	\item 4th CEEDs meeting Londra (Febbraio 2012).
 	\item Erasmus presso FIB - Facultat d’Informàtica de Barcelona (a.a. 2009/2010)
 \end{itemize}
-\section*{Esperienze Professionali}
-\begin{itemize}
-	\item Contratto Co.Co.Co presso  presso l'Università degli Studi di Padova al Dipartimento di Psicologia Generale. 
-		 \begin{itemize}
-	 	\item Da Gennaio 2011 a Giugno 2012;
-	 	\item  Sviluppo di un sistema di riconoscimento di gesture, acquisendo le immagini attraverso le camere del Microsoft Kinect. 
-	 	Il sistema è stato 	sviluppato in C++ utilizzando le librerie OpenCV e OpenNI,  le animazioni sono state riprodotte in Unity3D. 
-	 	Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs.
-	 \end{itemize}
-\end{itemize}
-\begin{itemize}
-	\item Docente Corso C.A.R (Corso Avanzato per la Ricerca) dal titolo ``Basi di Java''.
-	Presso l'Università degli Studi di Padova - Dipartimento di Psicologia Generale
-	\begin{itemize}
-		\item Aprile 2012;
-		\item durata del corso 25 ore.
-	\end{itemize}
-	\item Web Designer presso Simnumerica S.r.l.
-	\begin{itemize}
-		\item dal Novembre 2011 al Dicembre 2011
-		\item Sviluppo della pagina web dell'azienda. Moduli principalmente sviluppati: modulo di 
-		iscrizione, news slider, e sistema di trouble ticketing.
-	\end{itemize}
-	\item Assistente informatico presso l'ufficio certificazione offerta didattica - SID.
-	Presso: Università degli Studi di Padova
-	\begin{itemize}
-		\item Dal Settembre 2008 ad Agosto 2009 
-		\item Bonifica dati della base dati dell'Università, area didattica, prendendo come 
-		modello i dati provenienti dal ministero.
-		\item Creazione di una piccola applicazione web per il controllo delle attività didattiche
-		per la generazione del \textit{diploma supplement}.
-	\end{itemize}
-	\item Assistente informatico presso l'Ufficio Tecnico e Coordinamento Reti. Per
-	Regione del Veneto
-	\begin{itemize}
-		\item Dal Dicembre 2007 ad Agosto 2008
-		\item Progettazione e creazione del portale {\texttt overnetwork.it} basato sul {\textit cms Joomla}
-		ed in particolare: creazione di un sistema di \textit{trouble ticketing} con conseguente 
-		invio di notifiche tramite mail. Creazione di un nuovo sistema di \textit{profiling}
-		degli utenti differente da quello previsto dalla piattaforma Joomla
-	\end{itemize}
-	\item Portalettere per vari periodi presso i comuni di Cittadella (PD) e Campodarsego (PD).
-\end{itemize}
+
 \section*{Conoscenze informatiche:}
 \begin{itemize}
 	\item \textbf{S.O.:} Gnu/Linux conoscenza 	che va dall'installazione alla configurazione. Conoscenza anche dei vari 
 	sistemi operativi Microsoft.
 	\item \textbf{Programmazione: }:
 	\begin{itemize}
-	\item C/C++/C\#;
+	\item C/C++/C\#(base);
 	\item Java
 	\item Php MySql.
 	\end{itemize}
