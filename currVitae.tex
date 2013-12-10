@@ -2,16 +2,17 @@
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr,graphicx}
-\usepackage[hmargin=2cm,vmargin=2cm,a4paper]{geometry}
+\usepackage[hmargin=2cm,vmargin=1.5cm,a4paper]{geometry}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{multirow}
+\usepackage{longtable}
 \pagestyle{fancy}
 \lhead{\scshape Curriculum Vitae}
 \rhead{\itshape Mauro Donadeo}
 \rfoot{\footnotesize pag. \thepage}
 \cfoot{}
-\lfoot{{\footnotesize Aggiornato: Giugno 2013}}
+\lfoot{{\footnotesize Aggiornato: Dicembre 2013}}
 \renewcommand{\headrulewidth}{.5pt}
 \renewcommand{\footrulewidth}{.5pt}
 %\renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
@@ -39,8 +40,13 @@
 \rule{.8 \textwidth}{1pt}\\[5pt]
 \end{center}
 \section*{Esperienze Professionali}
-\begin{tabular}[h]{l p{0.8\textwidth}}
-\footnotesize{data (da - a)} & Luglio 2012 - attuale \\
+\begin{longtable}[h]{l p{0.8\textwidth}}
+\footnotesize{data (da - a)} & Ottobre 2013 - Oggi \\
+\footnotesize{posizione} & Assistente ufficio IT presso E-Global Service Spa.\\
+\footnotesize{attività principali}& Sviluppo di applicazioni e servizi Windows tramite Framework \textit{.Net} (3.5) e 
+Microsoft Sql Server 2008. Creata una nuova barra delle applicazioni aziendali utilizzando la libreria grafica \textit{WPF}.\\
+& \\
+\footnotesize{data (da - a)} & Luglio 2012 - Luglio 2013 \\
 \footnotesize{posizione} & Assegno Grant presso l'Università degli Studi di Padova - DEI.\\
 \footnotesize{attività principali}& Creazione di un sistema di hand detection e hand gesture recognition.
 Mediante acquisizione delle immagini con sistemi low cost (Microsoft Kinect). Sistema sviluppato interamente in 
@@ -80,9 +86,8 @@ Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http:
 & \\
 \footnotesize{data (da - a)} & Settembre 2005 - Ottobre 2007 \\
 \footnotesize{attività principali} & Portalettere per vari periodi presso i comuni di Cittadella (PD) e Campodarsego (PD).\\
-& \\
 %& \\
-\end{tabular}
+\end{longtable}
 
 \section*{Istruzione}
 \begin{itemize}
@@ -91,7 +96,7 @@ Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http:
 	\item Laurea Triennale in Ingegneria Informatica (Università degli Studi di Padova, Aprile 2008). 
 	Titolo tesi: {\itshape Realizzazione di un simulatore elementare del sistema robotico Lego Nxt
 	in Java}
-	\item Diploma Capo-tecnico Informatico (I.T.I.S. A. Meucci di Casarano (LE), 2004)
+	\item Diploma Capo-tecnico Informatico (I.T.I.S. A. Meucci di Casarano (LE)s, 2004)
 \end{itemize}
 \section*{Esperienze all'estero}
 \begin{itemize}
@@ -115,7 +120,7 @@ Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http:
 	\item sviluppo software su sistemi di acquisizione stereo e MS Kinect;
 	\item ambienti di sviluppo: NetBeans, Visual Studio 2010, QtCreator;
 	\item Unity 3D Game Engine
-	\item vim, Matlab, pacchetto Office, NXC, \LaTeX, GIT, SVN
+	\item vim, Matlab, pacchetto Office, NXC, \LaTeX, GIT, SVN, SqlServer 2008.
 	\end{itemize}
 \end{itemize}
 \section*{Conoscenze linguistiche:}
@@ -136,6 +141,15 @@ Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http:
 	\hline
 	\end{tabular}
 \end{center}
+\section*{Pubblicazioni:}
+\begin{itemize}
+\item F. Dominio, M. Donadeo, G. Marin, P. Zanuttigh, G. M. Cortelazzo, ``\textit{Hand Gesture Recognition with Depth Data}'', Analysis and Retrieval of Tracked Events and Motion in Imagery Streams 2013, October 21, Barcelona, Spain.
+\item G. Marin, M. Fraccaro, M. Donadeo, F. Dominio, P. Zanuttigh, ``\textit{Palm area detection for reliable hand gesture recognition}'', International Workshop on Multimedia Signal Processing 2013, Sept. 30 – Oct. 2, 2013, Pula (Sardinia), Italy.
+\item F. Dominio, M. Donadeo, P. Zanuttigh, ``\textit{Combining multiple depth-based descriptors for hand gesture recognition}'',
+accepted for Pattern Recognition Letters.
+\item L. Nanni, A. Lumini, F. Dominio, M. Donadeo, P. Zanuttigh, ``\textit{Ensemble to improve gesture recognition}'',
+accepted for International Journal of Automated Identification Technology.
+\end{itemize}
 \section*{Interessi personali: }
 \begin{itemize}
 	\item Informatica in generale, editing video e immagini;
@@ -143,6 +157,7 @@ Questo sistema è stato sviluppato all'interno del progetto europeo CEEDs (http:
 	\item Libri possibilmente in spagnolo per mantenere la conoscenza della lingua.
 \end{itemize}
 \vfill
-Ai sensi del D. Lgs n. 196/2003 autorizzo al trattamento dei miei dati personali.
-\vspace{1cm}
+
+\textit{Ai sensi del D. Lgs n. 196/2003 autorizzo al trattamento dei miei dati personali.}
+
 \end{document}
